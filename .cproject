@@ -23,10 +23,14 @@
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.1594783468" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.694274490" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.415501241" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/linux_i386&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/linux_x86_64&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/include&quot;"/>
 								</option>
-								<option id="gnu.c.compiler.option.include.files.301662053" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles"/>
+								<option id="gnu.c.compiler.option.include.files.301662053" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/include/GL/glew.h&quot;"/>
+								</option>
 								<option id="gnu.c.compiler.option.dialect.std.641404534" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.misc.other.2135703747" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -std=c++0x" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.766132561" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
@@ -37,21 +41,32 @@
 								<option id="gnu.cpp.compiler.option.dialect.std.411812743" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.286490037" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/lib&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/linux_i386&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/linux_x86_64&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.1717008089" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -std=c++0x" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.include.files.1253075572" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/include/GL/glew.h&quot;"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1390540138" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.910931098" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.1729188109" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
 								<option id="gnu.cpp.link.option.paths.1522125377" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/lib&quot;"/>
+									<listOptionValue builtIn="false" value=""/>
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/include/GL&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/linux_i386&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;/home/nathan/GDProject /common/linux_x86_64&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.83108801" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="glfw"/>
+									<listOptionValue builtIn="false" value="GLEW"/>
+									<listOptionValue builtIn="false" value="GL"/>
 								</option>
-								<option id="gnu.cpp.link.option.flags.122376566" superClass="gnu.cpp.link.option.flags" value="-std=c++0x" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.122376566" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-std=c++0x" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1908430613" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
