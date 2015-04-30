@@ -1,4 +1,4 @@
-BIN = Horror Lighting
+BIN = Horror_Lighting
 CC = gcc
 FLAGS = -Wall  -g -std=c++0x 
 INC = -I common/include
@@ -19,5 +19,5 @@ all:
 
 clean: 
 	@echo cleaning files
-	rm Horror Lighting
+	rm Horror_Lighting
 

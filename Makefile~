@@ -1,12 +1,10 @@
-BIN = Space
+BIN = Horror_Lighting
 CC = gcc
 FLAGS = -Wall  -g -std=c++0x 
 INC = -I common/include
-LIB = 
-LOC_LIB = common/linux_x86_64/libGLEW.a common/linux_x86_64/libglfw3.a common/lib/glew32s.lib
-SYS_LIB = -lstdc++ -lGLEW -lglfw -lGL -lX11 -lXxf86vm -lXrandr -lpthread -lXi -lm 
-SRC = \
-	main.cpp \
+LOC_LIB = common/linux_x86_64/libGLEW.a common/linux_x86_64/libglfw3.a 
+SYS_LIB = -lstdc++ -lGLEW -lglfw -lGL -lX11 -lXxf86vm -lXrandr -lpthread -lXi -lm -lSOIL
+SRC = main.cpp 
 
 	
 
@@ -21,5 +19,5 @@ all:
 
 clean: 
 	@echo cleaning files
-	rm Space 
+	rm Horror Lighting
 

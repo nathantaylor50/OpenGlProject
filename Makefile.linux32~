@@ -1,10 +1,13 @@
-BIN = SpaceGame
+BIN = Horror Lighting
 CC = gcc
-FLAGS = -Wall -pedantic -g -std=c++0x 
-INC = -I ../common/include
-LOC_LIB = common/linux_i386/libGLEW.a #common/linux_i386/libglfw3.a
-SYS_LIB = -lGLEW -lglfw -lGL -lX11 -lXxf86vm -lXrandr -lpthread -lXi -lm -lstdc++
+FLAGS = -Wall -g -std=c++0x 
+INC = -I common/include
+LOC_LIB = common/linux_i386/libGLEW.a common/linux_i386/libglfw3.a
+SYS_LIB = -lstdc++ -lGLEW -lglfw -lGL -lX11 -lXxf86vm -lXrandr -lpthread -lXi -lm -lSOIL
 SRC = main.cpp
+
+	
+
 
 all:
 	@echo
@@ -13,4 +16,8 @@ all:
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo
 	${CC} ${FLAGS} -o ${BIN} ${SRC} ${INC} ${LOC_LIB} ${SYS_LIB}
+
+clean: 
+	@echo cleaning files
+	rm Horror Lighting
 

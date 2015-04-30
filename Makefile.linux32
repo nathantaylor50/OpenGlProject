@@ -1,4 +1,4 @@
-BIN = Horror Lighting
+BIN = Horror_Lighting
 CC = gcc
 FLAGS = -Wall -g -std=c++0x 
 INC = -I common/include
@@ -12,12 +12,12 @@ SRC = main.cpp
 all:
 	@echo
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~Building GNU/LINUX 64-bit~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~Building GNU/LINUX 32-bit~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo
 	${CC} ${FLAGS} -o ${BIN} ${SRC} ${INC} ${LOC_LIB} ${SYS_LIB}
 
 clean: 
 	@echo cleaning files
-	rm Horror Lighting
+	rm Horror_Lighting
 
